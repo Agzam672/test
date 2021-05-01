@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фильм - </title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    .container {
+        
+        background-color: rgb(63, 64, 66);
+        color:black;
+        border-radius: 10px;
+        padding:3%;
+        
+      color: rgb(83, 85, 88);
+      color: rgb(149, 133, 37);
+      font-family: Gill Sans, FANTASY;
+    }
+    .outer-div{
+      background-color: #7c7c7c;
+    }
+    .inner-div{
+      background-color: rgb(0, 0, 0);
+    }
+    img {
+      max-width: 100%;
+    }
+  
+     svg {
+          display: block;
+          font: 10.5em 'Montserrat';
+          width: 960px;
+          height: 300px;
+          margin: 0 auto;
+      }
+      
+      .text-copy {
+          fill: none;
+          stroke: white;
+          stroke-dasharray: 6% 29%;
+          stroke-width: 5px;
+          stroke-dashoffset: 0%;
+          animation: stroke-offset 5.5s infinite linear;
+      }
+      .text-copy:nth-child(1){
+        stroke: #4D163D;
+        animation-delay: -1;
+      }
+      
+      .text-copy:nth-child(2){
+        stroke: #ff000d;
+        animation-delay: -2s;
+      }
+      
+      .text-copy:nth-child(3){
+        stroke: #cc00ff;
+        animation-delay: -3s;
+      }
+      
+      .text-copy:nth-child(4){
+        stroke: #60079b;
+        animation-delay: -4s;
+      }
+      
+      .text-copy:nth-child(5){
+        stroke: #FDB731;
+        animation-delay: -5s;
+      }
+      
+      @keyframes stroke-offset{
+        100% {stroke-dashoffset: -35%;}
+      }
+                </style>
+                
+      
+      
+      
+      
+                <svg viewBox="0 0 1080 300">
+                  <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="80%">Фильм Джокер</text>
+                  </symbol>
+                
+                  <g class = "g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                  </g>
+                </svg>
+
+    }
+</style>
+<body>
+    
+
+    
+ <div class="container outer-div">
+   <div class="row">
+     <div class="col-4">
+      <div class="container inner-div">
+        <h1>Фильм - Джокер</h1>
+        <div class="row ">
+     
+          <div class="col-sm">
+            <img src="https://avatars.mds.yandex.net/get-ott/200035/2a0000016f0e2ffaaf4e9d96ecc54e285bfb/375x234" alt="...">
+          </div>
+     
+          <div class="col-sm">
+            <h3>Информация о фильме</h3>
+            <p>Год производства: <span>2019</span></p>
+            <p>Страна: <span>США, Канада</span></p>
+            <p>Жанр: <span>триллер, драма, криминал</span></p>
+          </div>
+     
+          <div class="col-sm">
+            <p>8.0424</p>
+          </div>
+     
+        </div>
+      </div>
+     </div>
+     <div class="col-8">
+       <div class="container inner-div">
+         <div class="row">
+           <div class="col-sm">
+             <h1>Видео плейр</h1>
+             
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+  
+ 
+ 
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script> 
+    
+    <div style= "height:500px;margin:10%">
+      <hr style="height: 1%;">
+        <div style="margin: 1%; float: left; ">
+          <span class="title">Поддержка</span>
+          <ul>
+            <li><a href="mailto:support@ivi.ru">Agzamkairbek29@gmail.com</a></li>
+            <li class="js-user-support-phone"><a href="tel:77172642127">+77769916339 </a></li>
+            <li><span>Вопросы и ответы — <a target="_blank" id="bottom_support_link" href="#"
+                  data-token=""></a></span>
+            </li>
+          </ul>
+        </div>
+        <div style="margin: 5%;">
+          <span>Присоединяйтесь:</span>
+  
+          <p>©️ 2021 ООО «GIVI.RU»</p>
+  
+          <p>HBO ®️ and related service marks are the property of Home Box Office, Inc</p>
+        </div>
+</body>
+</html>

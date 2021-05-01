@@ -1,0 +1,568 @@
+<!--
+    HTML-hyper text markup language 
+    tag - <p> 
+
+FRONT-END
+    html - наполнять сайт контентом
+    css - придовать стиль сайтам
+    js - анимации
+
+BACK-END
+    JAVA 
+    PYTHON
+    PHP
+    GO
+    
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    crossorigin="anonymous"></script>
+  <style>
+    body {
+      background-color: rgb(0, 0, 0);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: rgb(83, 85, 88);
+      color: #FFF;
+      font-family: Gill Sans, FANTASY;
+      margin-left: 5%;
+    }
+
+    p {
+      color: rgb(83, 85, 88);
+      margin: 2%;
+    }
+
+    .prim-img {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+    }
+
+    .prim-img a {
+      margin: 1%
+    }
+
+    img {
+
+      border-radius: 15px 50px;
+    }
+
+    hr {
+      height: 7px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed;width: 100%;z-index: 100;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="" alt="" width="100px"
+          height="auto"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Просмотренные</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Смотреть с друзьями
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Друзья</a></li>
+              <li><a class="dropdown-item" href="#">Друзья в сети</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Пати</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Понравившийся
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Фильмы</a></li>
+              <li><a class="dropdown-item" href="#">Сериалы</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Популярное
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">За все время</a></li>
+              <li><a class="dropdown-item" href="#">За год</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">За месяц</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+          <button class="btn btn-outline-success" type="submit">Поиск</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div style="padding:1%;text-align:center;padding-top: 8%;">
+    <h1>Фильмы смотреть онлайн</h1>
+    <hr style="width: 50%;height: 5%;color: rgb(255, 255, 255);">
+    <p> <span style="font-size: 24px; color: #FFF;"><b>Вы любите смотреть фильмы онлайн и проводите много времени,
+      прочесывая сайты в поисках чего-нибудь интересного?<br>Стоит задержаться на
+      GIVI.ru
+      – фильмов, которые собраны у нас,
+      хватит надолго.</b></span>
+      </p>
+    <br>
+    <style>
+  
+      svg {
+          display: block;
+          font: 10.5em 'Montserrat';
+          width: 960px;
+          height: 300px;
+          margin: 0 auto;
+      }
+      
+      .text-copy {
+          fill: none;
+          stroke: white;
+          stroke-dasharray: 6% 29%;
+          stroke-width: 5px;
+          stroke-dashoffset: 0%;
+          animation: stroke-offset 5.5s infinite linear;
+      }
+      .text-copy:nth-child(1){
+        stroke: #4D163D;
+        animation-delay: -1;
+      }
+      
+      .text-copy:nth-child(2){
+        stroke: #ff000d;
+        animation-delay: -2s;
+      }
+      
+      .text-copy:nth-child(3){
+        stroke: #cc00ff;
+        animation-delay: -3s;
+      }
+      
+      .text-copy:nth-child(4){
+        stroke: #60079b;
+        animation-delay: -4s;
+      }
+      
+      .text-copy:nth-child(5){
+        stroke: #FDB731;
+        animation-delay: -5s;
+      }
+      
+      @keyframes stroke-offset{
+        100% {stroke-dashoffset: -35%;}
+      }
+                </style>
+                
+      
+      
+      
+      
+                <svg viewBox="0 0 960 300">
+                  <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="80%">Фильмы дня</text>
+                  </symbol>
+                
+                  <g class = "g-ants">
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                    <use xlink:href="#s-text" class="text-copy"></use>
+                  </g>
+                </svg>
+      <div style="padding:1%;text-align:center;padding-top: 3%;">
+
+
+        
+        <a href="https://www.kinopoisk.ru/film/1387021/"
+            ><img src="https://pa1.narvii.com/6863/70d9dcd9b4235e9abde976f720b86188ad2b83c5r1-540-290_hq.gif" alt=""></a>
+        
+        <a href="https://www.kinopoisk.ru/film/964318/"
+            ><img src="https://i.gifer.com/N21z.gif" alt=""></a>
+
+        <a href="https://www.kinopoisk.ru/film/964318/"
+            ><img src="https://i.gifer.com/3WsR.gif" alt=""></a>
+
+        <a href="https://www.kinopoisk.ru/film/1309596/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/ba79433c-84c0-4ce7-b4a4-bfcfe89ca3bf/300x450" alt=""></a>
+
+        <a href="https://www.kinopoisk.ru/film/965936/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/52d9467b-1f39-4a69-a304-ab2a02afe8ac/300x450" alt=""></a>
+
+        <a href="https://www.kinopoisk.ru/film/1200179/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/1b1db0b1-5f91-4264-961b-3d03e9c96f16/300x450" alt=""></a>
+
+        <a href="https://www.kinopoisk.ru/film/1274606/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/5d9b829c-215d-4151-9dbe-db1e00093857/300x450" alt=""></a>
+
+        <a href="https://www.kinopoisk.ru/film/1202296/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/f69d6c6c-e10b-4f22-ad1e-5fac6323c7c1/300x450" alt=""></a>
+
+        <a href="https://www.kinopoisk.ru/film/1245501/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1898899/5bb178cc-ad9e-4872-bf5e-0b749b3f86d4/300x450" alt=""></a>
+
+            <a href="https://www.kinopoisk.ru/film/1109271/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/57e25896-b6e8-47af-966e-feab17041298/300x450" alt=""></a>
+
+            <a href="https://www.kinopoisk.ru/film/1015471/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/579c4f99-246d-4c3e-b401-419cda21a507/300x450" alt=""></a>
+
+            <a href="https://www.kinopoisk.ru/film/468562/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/de2efaf5-5203-4f5c-8c20-ec62780876d3/300x450" alt=""></a>
+
+            <a href="https://www.kinopoisk.ru/film/1405926/"
+            ><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/3d742f2a-842b-42b2-8952-5168c642fa95/300x450" alt=""></a>
+      </div>
+    
+  </div>
+ 
+              <svg viewBox="0 0 1500 300">
+                <symbol id="s-text2">
+                  <text text-anchor="middle" x="50%" y="80%">Премьеры фильмов</text>
+                </symbol>
+              
+                <g class = "g-ants">
+                  <use xlink:href="#s-text2" class="text-copy"></use>
+                  <use xlink:href="#s-text2" class="text-copy"></use>
+                  <use xlink:href="#s-text2" class="text-copy"></use>
+                  <use xlink:href="#s-text2" class="text-copy"></use>
+                  <use xlink:href="#s-text2" class="text-copy"></use>
+                </g>
+              </svg>
+  <div style="padding-top: 10%;text-align: center;">
+    <hr>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <div id="prim-img" style="margin:0%" class="prim-img">
+            
+                
+            <a href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=45b63ee83d9ea3c293a927da58e6ce1d&selectionWindowId=kp-morda&source=kinopoisk_kp_main"
+            ><img src="https://avatars.mds.yandex.net/get-ott/200035/2a0000016f0e2ffaaf4e9d96ecc54e285bfb/375x234" alt=""></a>
+      
+           <a href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4bd801f6dfc84be6afba507fb6dbb787&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img style ="margin:1%;" src="https://avatars.mds.yandex.net/get-ott/1531675/2a00000174699c69449641660284cfadc289/375x234" alt=""></a>
+           
+           <a href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4c974a01688f7c5d91b05305b42ce5f7&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img src="https://avatars.mds.yandex.net/get-ott/374297/2a00000177f3e90362b76a53e515d2abe612/375x234" alt=""></a>
+       
+           <a href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4f5665d75fff39aca67fa3f6e4dd9029&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img src="https://avatars.mds.yandex.net/get-ott/224348/2a0000016e2660866feccbd1f69e619e0451/375x234" alt=""></a>
+   
+           <a href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4551f0618010ec2b9cc4e629d3c3e3e1&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img src="https://avatars.mds.yandex.net/get-ott/1531675/2a00000178180f69f2310340425415a16c0c/375x234" alt=""></a>
+   
+           <a href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4fec6eaca9e5f623a4f3b5143b1b8069&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img src="https://avatars.mds.yandex.net/get-ott/223007/2a0000016fc3501e990f16eb34aed0db4fcc/375x234" alt=""></a>
+   
+           <a href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4d8ac303e83156269748606e752d0946&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img src="https://avatars.mds.yandex.net/get-ott/1531675/2a000001714e8688171b351deb1230000e1f/375x234" alt=""></a>
+           
+           <a href="https://hd.kinopoisk.ru/film/4bc37821ac373b4b9e53d14075bf71c9">
+           <img src="https://avatars.mds.yandex.net/get-ott/374297/2a000001785ebe8488ce902b5e5981b5352b/375x234" alt=""></a>
+   
+           <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=4ec8847dac71b614abdfe16023e22d21&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img src="https://avatars.mds.yandex.net/get-ott/200035/2a00000177f18ab4332b2954aaabf0947692/375x234" alt=""></a>
+   
+           <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=46c5df252dc1a790b82d1a00fcf44812&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+           <img src="https://avatars.mds.yandex.net/get-ott/2419418/2a00000176f1c8c3b4518fb4b0fba873f1e9/375x234" alt=""></a>
+   
+           <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=4816c5955f8db86ba742546a579950ed&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+             <img src="https://avatars.mds.yandex.net/get-ott/2385704/2a0000016e266033cd1ec6ce26d345399b4f/375x234" alt=""></a>
+   
+             <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=446e71f9838071cab7409599c3f3879b&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+               <img src="https://avatars.mds.yandex.net/get-ott/1672343/2a00000176aa75cc08fd47322f900be359a3/375x234" alt=""></a>
+   
+               <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=4c03cc1e40897261969b65a240351468&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+                 <img src="https://avatars.mds.yandex.net/get-ott/2439731/2a0000017255378ebd459423fa268e66bea0/375x234" alt=""></a>
+   
+                 <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=40f447ebeb33b3d4b37a9a5fbbe0b93e&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+                   <img src="https://avatars.mds.yandex.net/get-ott/1672343/2a000001725aaa5396e001ba09469c4781a7/375x234" alt=""></a>
+   
+                   <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=4b18c3747237801481f186aed5de21f8&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+                     <img src="https://avatars.mds.yandex.net/get-ott/2385704/2a0000016e1c8f989bff32bef5733a92c81d/375x234" alt=""></a>
+   
+                     <a href="https://hd.kinopoisk.ru/selection/60706559eec57511b0496112?rt=4a411e53db769c909433bf2fe910972b&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+                       <img src="https://avatars.mds.yandex.net/get-ott/223007/2a00000177b49c7ede07f5514f985471301e/375x234" alt=""></a>
+
+
+            
+
+          </div>
+
+
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+
+          <div id="prim-img" style="margin:0%" class="prim-img">
+            
+            
+              
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=415abfad23f39b708691659d8edd3daa&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/212840/2a0000016e266af2ba147ed9787854194797/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=4656e8214ac01eb184def93de9180621&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2419418/2a0000016e2668db8b78fc2be109d09e2c03/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=47aa64853f2c318198d21e508c5a611f&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/223007/2a0000016e266b428b726b69181859d98a52/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4fec6eaca9e5f623a4f3b5143b1b8069&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/223007/2a0000016fc3501e990f16eb34aed0db4fcc/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a7ed80aa0470021839ee2?rt=421b4278bb1a50bab1f24161756298a7&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/212840/2a0000016e266c8d5e760442b0f8c970b267/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a7a81d196ec002112b6cc?rt=4bec360f5432cbd3a8a4ab61ff805840&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/212840/2a000001772002351d79011cc68be7f96408/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=45450516338ed499b03a83b99fba40fe&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2385704/2a0000016e2667fbec089e892c2cd6e98d7c/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4633a9d0f87577c4ba9f5117fde2c933&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/239697/2a00000171a0bd9951458318bba354a700f5/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=48c06d5694b38599b036a9d7b8bef612&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2439731/2a00000174d9e78664723b6b5b490c9bb90e/375x234"
+                alt=""></a>
+
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4fc98446cef7b8fdb5c4a6e2067584e8&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2419418/2a0000016e266b897f3972513abf291c2ee2/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=45d4d96b863a51a4a77e7fbae4f718be&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2385704/2a00000176affb47ff9a5832f86c3a103677/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=44dd1fd53053e427a27d58f13f7c2a71&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/223007/2a00000175f515cec69c3d2396e9ca1ed4b4/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=45383e7e8075cdd99fd364bb576254c7&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/200035/2a00000173e2d6ddc6149fdf74862a69434c/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4eb420d0701c8011b1b6b7c77e026cae&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/374297/2a0000017729a880c6b6c1abdba84d8508f2/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4b8e6c3267e62f8ea862ab825309623c&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/223007/2a00000175798ba8d7c712f557fe29ea5a7e/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=47f9b33fd315a6d98f62679f4cfeeb4a&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/1534341/2a00000177193b8926e19cd49dbaf0bc61bf/375x234"
+                alt=""></a>
+
+
+          </div>
+
+
+
+
+        </div>
+        <div class="carousel-item">
+
+          <div id="prim-img" style="margin:0%" class="prim-img">
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4ad6bdad0228a162902566efa02ea314&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/224348/2a0000016f12eec677fba0bf30019f8e0b87/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4ccfdc15857eb553ac0fdaacbc1171fc&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/1534341/2a000001757aff4a3e45cc6f8da2451be302/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4d74d8cfe8e4af9d962467a64cdd9190&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2439731/2a0000016e1e11a62c7467b7ddbd1566c64b/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4744902a86cf34a1a4858c666804a143&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/1672343/2a0000016e1ddaf1da73019eebcdc4476cae/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=43b89d113089f66fa8488ff6cdc87971&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/374297/2a000001749b17a5fcdf17e08fd4bd47f842/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=4c8b8ff575d837548c04817cb26e163e&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2439731/2a0000016e3c79d9705dc170a23fe2b4a06e/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a79550aa0470021839edd?rt=453c919fd5909745bd9cef8922737875&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/374297/2a000001785eb8becfb7f9a55dfd92acd02b/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=41bd767452346137a847c79e255ebd9f&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2419418/2a0000016eac7486c946d33d791f13bf03ea/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=441cddb3f9bb9a26b4b9bf9b25a4bd87&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/374297/2a0000016eefe090ab2e48abe24fc2fb022a/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=4931c6c5eeb0be279e868afe988e5375&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/1672343/2a000001720dcc970e9866b18d1ecf01ec40/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=40933bebfe15d69c91452061717f9243&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/212840/2a0000016e2667d05697f9c6d46bcaad6b21/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=4c109b8bb950c4d2b5821e5cfe74c094&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/212840/2a0000016eac75b675767d3d63bbfaedb30f/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=43399e666f3ee606bc9e55997cd41438&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/1672343/2a0000016eac73ac682d1aefe96fad28724e/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=47da3c3ec475b650a3ad0842b9d15c3c&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/239697/2a0000016ef3fef32f9b7553902f9689c79c/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=4153f645576f5c70b4af1d3e2138b873&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2439731/2a0000016e266af84d4f14bab718eb39a9ac/375x234"
+                alt=""></a>
+
+            <a
+              href="https://hd.kinopoisk.ru/selection/601a796fd196ec002112b6cb?rt=4ee60667fb74d882b7b21f49374b24df&selectionWindowId=kp-morda&source=kinopoisk_kp_main">
+              <img src="https://avatars.mds.yandex.net/get-ott/2439731/2a000001774362119548898e215effd61d8b/375x234"
+                alt=""></a>
+
+
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+  </div>
+
+
+
+  <div style= "height:500px;margin:10%">
+    <hr style="height: 1%;">
+      <div style="margin: 1%; float: left; ">
+        <span class="title">Поддержка</span>
+        <ul>
+          <li><a href="mailto:support@ivi.ru">Agzamkairbek29@gmail.com</a></li>
+          <li class="js-user-support-phone"><a href="tel:77172642127">+77769916339 </a></li>
+          <li><span>Вопросы и ответы — <a target="_blank" id="bottom_support_link" href="#"
+                data-token=""></a></span>
+          </li>
+        </ul>
+      </div>
+      <div style="margin: 5%;">
+        <span>Присоединяйтесь:</span>
+
+        <p>©️ 2021 ООО «GIVI.RU»</p>
+
+        <p>HBO ®️ and related service marks are the property of Home Box Office, Inc</p>
+      </div>
+
+    </div>
+              
+
+</body>
+
+</html>
